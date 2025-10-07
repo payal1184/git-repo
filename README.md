@@ -2,7 +2,7 @@
 
 This project demonstrates a **3-tier web application architecture**.  
 The three layers are: **Web Layer**, **Application Layer**, and **Database Layer**.
-
+![Architecture](image/one.png)
 ---
 
 ## 1️⃣ Web Layer (Presentation Tier)
