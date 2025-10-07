@@ -2,7 +2,7 @@
 
 This project demonstrates the deployment of a Three-Tier Architecture on AWS. The architecture separates the application into Presentation Layer, Application Layer, and Database Layer for scalability, security, and high availability.
 🏗 Architecture Diagram
-[Subnets Page](Screenshot105.png)
+image\Screenshot (98).pngmla
 1️⃣ Presentation Layer (Frontend)
 
 Runs on Amazon EC2 / Elastic Load Balancer (ALB).
