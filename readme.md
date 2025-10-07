@@ -1,0 +1,15 @@
+3-Tier-Architecture Three-Tier Architecture on AWS 📌 Overview
+
+This project demonstrates the deployment of a Three-Tier Architecture on AWS. The architecture separates the application into Presentation Layer, Application Layer, and Database Layer for scalability, security, and high availability.
+🏗 Architecture Diagram
+[Subnets Page](Screenshot105.png)
+1️⃣ Presentation Layer (Frontend)
+
+Runs on Amazon EC2 / Elastic Load Balancer (ALB).
+
+Hosts a web server (Apache/Nginx) serving HTML, CSS, JavaScript, or PHP.
+
+Handles all incoming user requests.
+![Frontend Layer](Screenshot105.png)
+
+---
