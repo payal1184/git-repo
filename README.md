@@ -1,7 +1,7 @@
-# 3-Tier Architecture Project
+## 3-Tier Architecture Project
 
-This project demonstrates a *3-tier web application architecture*.  
-The three layers are: *Web Layer*, *Application Layer*, and *Database Layer*.
+###This project demonstrates a *3-tier web application architecture*.  
+###The three layers are: *Web Layer*, *Application Layer*, and *Database Layer*.
 ![Architecture](image/one.png)
 ---
 
