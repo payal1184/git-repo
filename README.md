@@ -1,8 +1,11 @@
-## 3-Tier Architecture Project
+# 🌐 3-Tier Architecture on AWS
 
-### This project demonstrates a *3-tier web application architecture*.  
-### The three layers are: *Web Layer*, *Application Layer*, and *Database Layer*.
-![Architecture](image/one.png)
+## 📖 Project Description
+
+This repository showcases the deployment of a **Three-Tier Architecture** on **Amazon Web Services (AWS)** to achieve **scalability**, **security**, and **high availability**.  
+The implementation demonstrates how cloud resources can be organized into three independent tiers — **Presentation**, **Application**, and **Database** — ensuring better **performance**, **modularity**, and **fault tolerance** across the system.
+
+![Architecture](image/3-tier%20infrastructure-complete_0.png)
 ---
 
 ## 1️⃣ Web Layer (Presentation Tier)
