@@ -48,16 +48,16 @@ The implementation demonstrates how cloud resources can be organized into three 
 
 ### 2️⃣ Application Layer (Backend /Business Logic Tier)
 
-**Purpose:** Receives requests from the Web Layer, processes them, and interacts with the Database Layer.
+**Security Group :**  
+  Configure the security group to allow HTTP traffic from the Web Layer only. 
+ 
+  ![Application SG HTTP Rule](image/Screenshot%20(126).png)
 
-**Setup Steps:**
-1. Launch an **EC2 instance** in the **Private Subnet**.
-2. Configure **Security Group**: Allow **HTTP traffic from Web Layer only**.
-3. Deploy **backend code / APIs**.
-4. Configure **database connection**.
 
-**Screenshot:**
-![App Layer Screenshot](images/app_layer.png)
+- **NAT Gateway:**  
+  Configure the NAT Gateway in the public subnet to allow private instances in the Application Layer to access the Internet for updates or patches.  
+  
+![Application SG HTTP Rule](image/Screenshot%20(110).png)
 
 ---
 
