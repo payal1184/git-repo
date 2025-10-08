@@ -63,21 +63,23 @@ The implementation demonstrates how cloud resources can be organized into three 
 
 ### 3️⃣ Database Layer (Data Tier)
 
-**Purpose:** Stores and retrieves data for the Application Layer.
+- **RDS Instance:**  
 
-**Setup Steps:**
-1. Create an **RDS instance** in the **Private Subnet**.
-2. Configure **Security Group**: Allow **MySQL(3306) traffic from Application Layer only**.
-3. Create **databases, tables, and users**.
-4. Test **connectivity from Application Layer**.
+  Uses Amazon RDS (MySQL/PostgreSQL) or Amazon Aurora.
+  Shows the database instance deployed in the private subnet of the Database Layer.  
+  The instance uses [MySQL/PostgreSQL/etc.] engine, with storage and security configured for high availability.  
+  *(Screenshot of the RDS instance from AWS Console)*  
+  ![RDS Instance Screenshot](image/Screenshot%20(100).png)
 
-**Screenshot:**
-![DB Layer Screenshot](image/Screenshot%20(100).png)
+- **DB Subnet Group:**  
+  Shows the subnet group where the database instances are deployed.  
+  The DB Subnet Group contains multiple private subnets across different Availability Zones (AZs) to ensure high availability.  
+  It isolates the database instances from the public internet, allowing access only from the Application Layer instances via their security groups.  
+
+
 ![DB Layer Screenshot](image/Screenshot%20(102).png)
 
 ---
-
-
 
 ---
 
