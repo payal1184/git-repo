@@ -15,11 +15,15 @@ The implementation demonstrates how cloud resources can be organized into three 
 
 ![Architecture](image/Screenshot%20(98).png)
 ---
-**VPC & Subnet:** 
-Shows the VPC and public subnet where the web servers are deployed. 
+- **VPC & Subnet:**  
+  Shows the VPC and public subnet where the web servers are deployed.  
+  The VPC provides network isolation, while the Subnet organizes resources within the VPC for better traffic management.
+. 
 
 ![Architecture](image/Screenshot%20(104).png)
 ![Architecture](image/Screenshot%20(105).png)
+
+
 
 
 
@@ -28,6 +32,8 @@ The subnets allow incoming traffic from the Internet via the Internet Gateway.
 Displays the Internet Gateway attached to the VPC, enabling public access to the web tier.
 
 ![Architecture](image/Screenshot%20(108).png)
+
+
 
 **Route Table:**
 Illustrates the route table associated with the public subnet, directing traffic to the Internet Gateway.
