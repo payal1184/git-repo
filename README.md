@@ -65,10 +65,10 @@ The implementation demonstrates how cloud resources can be organized into three 
 
 - **RDS Instance:**  
 
-  Uses Amazon RDS (MySQL/PostgreSQL) or Amazon Aurora.
+  Uses Amazon RDS MySQL or Amazon Aurora.
   Shows the database instance deployed in the private subnet of the Database Layer.  
-  The instance uses [MySQL/PostgreSQL/etc.] engine, with storage and security configured for high availability.  
-  *(Screenshot of the RDS instance from AWS Console)*  
+  The instance uses MySQL engine, with storage and security configured for high availability.  
+   
   ![RDS Instance Screenshot](image/Screenshot%20(100).png)
 
 - **DB Subnet Group:**  
