@@ -8,16 +8,31 @@ The implementation demonstrates how cloud resources can be organized into three 
 
 ### 1️⃣ Presentation Layer (Frontend)
 
-**Purpose:** Handles user requests from the browser and displays web pages.
+Launch an EC2 instance in the Public Subnet.
+Install Apache/Nginx web server.
+Deploy HTML/PHP web pages.
 
-**Setup Steps:**
-1. Launch an **EC2 instance** in the **Public Subnet**.
-2. Configure **Security Group**: Allow **HTTP(80), HTTPS(443), SSH(22)**.
-3. Install **Nginx** web server.
-4. Deploy **HTML/PHP** web pages.
+![Architecture](image/Screenshot%20(98).png)
+---
+VPC & Subnet:
+Shows the VPC and public subnet where the web servers are deployed. 
 
-**Screenshot:**
-![Web Layer Screenshot](image/Screenshot%20(98).png)
+![Architecture](image/Screenshot%20(104).png)
+![Architecture](image/Screenshot%20(105).png)
+
+
+
+Internet Gateway:
+The subnets allow incoming traffic from the Internet via the Internet Gateway.
+Displays the Internet Gateway attached to the VPC, enabling public access to the web tier.
+
+![Architecture](image/Screenshot%20(108).png)
+
+Route Table:
+Illustrates the route table associated with the public subnet, directing traffic to the Internet Gateway.
+
+![Architecture](image/Screenshot%20(107).png)
+
 
 ---
 
