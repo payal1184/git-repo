@@ -82,17 +82,19 @@ The implementation demonstrates how cloud resources can be organized into three 
 ---
 
 ---
+
 ## ⚡ Deployment Steps
 
-1. Launch Web Layer EC2 instance in the Public Subnet with proper Security Group.  
-2. Install Apache or Nginx web server on the EC2 instance.  
-3. Deploy HTML/PHP web pages to the web server.  
-4. Launch Application Layer EC2 instances in the Private Subnet.  
-5. Configure Security Group to allow HTTP traffic from Web Layer only.  
-6. Configure NAT Gateway for Application Layer instances to access the Internet.  
-7. Launch Database Layer RDS instance in the Private Subnet with DB Subnet Group.  
-8. Configure Database Security Group to allow access only from Application Layer.  
-9. Verify Web → Application → Database connectivity and functionality.
+1. Launch Web EC2 in Public Subnet.  
+2. Install Apache/Nginx.  
+3. Deploy HTML/PHP pages.  
+4. Launch App EC2 in Private Subnet.  
+5. Allow HTTP from Web Layer in SG.  
+6. Configure NAT Gateway for App EC2.  
+7. Launch RDS in Private Subnet.  
+8. Allow DB access from App Layer only.  
+9. Test Web → App → DB connectivity.
+
 
 
 ## Technologies Used
