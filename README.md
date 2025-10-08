@@ -6,22 +6,22 @@ The implementation demonstrates how cloud resources can be organized into three 
 ![Architecture](image/3-tier%20infrastructure-complete_0.png)
 ---
 
-## 1️⃣ Web Layer (Presentation Tier)
+### 1️⃣ Presentation Layer (Frontend)
 
 **Purpose:** Handles user requests from the browser and displays web pages.
 
 **Setup Steps:**
 1. Launch an **EC2 instance** in the **Public Subnet**.
 2. Configure **Security Group**: Allow **HTTP(80), HTTPS(443), SSH(22)**.
-3. Install **Apache/Nginx** web server.
+3. Install **Nginx** web server.
 4. Deploy **HTML/PHP** web pages.
 
 **Screenshot:**
-![Web Layer Screenshot](images/web_layer.png)
+![Web Layer Screenshot](image/Screenshot%20(98).png)
 
 ---
 
-## 2️⃣ Application Layer (Business Logic Tier)
+### 2️⃣ Application Layer (Backend /Business Logic Tier)
 
 **Purpose:** Receives requests from the Web Layer, processes them, and interacts with the Database Layer.
 
@@ -36,7 +36,7 @@ The implementation demonstrates how cloud resources can be organized into three 
 
 ---
 
-## 3️⃣ Database Layer (Data Tier)
+### 3️⃣ Database Layer (Data Tier)
 
 **Purpose:** Stores and retrieves data for the Application Layer.
 
@@ -47,23 +47,20 @@ The implementation demonstrates how cloud resources can be organized into three 
 4. Test **connectivity from Application Layer**.
 
 **Screenshot:**
-![DB Layer Screenshot](images/db_layer.png)
+![DB Layer Screenshot](image/Screenshot%20(100).png)
+![DB Layer Screenshot](image/Screenshot%20(102).png)
 
 ---
 
-## Project Architecture Diagram
 
-![3-Tier Architecture](images/3tier_architecture.png)
-
-*Diagram showing Web → App → DB communication and subnet layout.*
 
 ---
 
 ## Technologies Used
 
 - **AWS:** EC2, VPC, Subnets, Security Groups, RDS  
-- **Web:** Apache/Nginx, HTML, PHP  
-- **Database:** MySQL / PostgreSQL  
+- **Web:** Nginx, HTML, PHP  
+- **Database:** MySQL 
 
 ---
 
